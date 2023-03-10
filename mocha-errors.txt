@@ -1,10 +1,10 @@
-  within index.html
     ✓ contains a <body> tag
     ✓ contains a </body> tag
     ✓ contains an <h1> tag
     ✓ contains a <p> tag
     ✓ within the <p>, it contains a <strong> tag
     ✓ within the <p>, it contains an <em> tag
-    1) within the <p>, it contains an <a> tag
+    ✓ within the <p>, it contains an <a> tag
+    1) within the <body>, it contains a <table> tag
 
-  6 passing (278ms)
+  7 passing (290ms)
