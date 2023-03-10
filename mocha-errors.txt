@@ -1,0 +1,53 @@
+> mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json
+
+
+
+  within index.html
+    ✓ contains a <body> tag
+    ✓ contains a </body> tag
+    1) contains an <h1> tag
+    2) contains a <p> tag
+    3) within the <p>, it contains a <strong> tag
+    4) within the <p>, it contains an <em> tag
+    5) within the <p>, it contains an <a> tag
+    6) within the <body>, it contains a <table> tag
+
+
+  2 passing (285ms)
+  6 failing
+
+  1) within index.html
+       contains an <h1> tag:
+     AssertionError: expected '' to include '<h1>'
+      at Context.<anonymous> (test/indexTest.js:11:57)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  2) within index.html
+       contains a <p> tag:
+     AssertionError: expected '' to include '<p>'
+      at Context.<anonymous> (test/indexTest.js:14:57)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  3) within index.html
+       within the <p>, it contains a <strong> tag:
+     TypeError: Cannot read properties of null (reading 'innerHTML')
+      at Context.<anonymous> (test/indexTest.js:17:39)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  4) within index.html
+       within the <p>, it contains an <em> tag:
+     TypeError: Cannot read properties of null (reading 'innerHTML')
+      at Context.<anonymous> (test/indexTest.js:20:39)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  5) within index.html
+       within the <p>, it contains an <a> tag:
+     TypeError: Cannot read properties of null (reading 'innerHTML')
+      at Context.<anonymous> (test/indexTest.js:23:39)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  6) within index.html
+       within the <body>, it contains a <table> tag:
+     AssertionError: expected '' to include 'table'
+      at Context.<anonymous> (test/indexTest.js:28:57)
+      at process.processImmediate (node:internal/timers:476:21)
