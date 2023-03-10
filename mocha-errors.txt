@@ -1,3 +1,4 @@
+ within index.html
     ✓ contains a <body> tag
     ✓ contains a </body> tag
     ✓ contains an <h1> tag
@@ -5,6 +6,7 @@
     ✓ within the <p>, it contains a <strong> tag
     ✓ within the <p>, it contains an <em> tag
     ✓ within the <p>, it contains an <a> tag
-    1) within the <body>, it contains a <table> tag
+    ✓ within the <body>, it contains a <table> tag
 
-  7 passing (290ms)
+
+  8 passing (290ms)
